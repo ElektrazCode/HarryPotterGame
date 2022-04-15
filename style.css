@@ -1,0 +1,88 @@
+@font-face{
+    font-family: 'HarryPotter';
+    src: url('images/HarryPotter.TTF');
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+body{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    width:100vw;
+    height: 100vh;
+    background-image: url('images/HogwartsDining.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    text-align:center;
+}
+ul{
+    display:flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    font-size: 2em;
+}
+li{
+    padding: 0 1em;
+    margin:0;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5); 
+}
+h1{
+    padding-top: 10%;
+    font-family: 'HarryPotter';
+    font-size: 6em;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5); 
+}
+.swiper {
+    margin:1em;
+    width: 400px;
+    height: 550px;
+}
+.swiper-slide {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 18px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #000;
+    background-color: white;
+    padding:10%;
+}
+/* .swiper-scroll {
+    background-image: url(images/parchement.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+} */
+.swiper-slide p {
+    margin: 1em;
+    scrollbar-width: none;
+    -ms-overflow-style:none;
+    overflow-y:auto;
+    text-align: justify;
+}
+.cardbody{
+    height:75%;
+}
+.swiper-slide img{
+    height:100%;
+}
+p::-webkit-scrollbar{
+  display:none;
+}
+
